@@ -30,8 +30,8 @@ export const Hero = () => {
     ];
     const handleDownload = () => {
         const link = document.createElement('a');
-        link.href = '/MYRES.pdf'; // Directly specify the relative path
-        link.download = 'MYRES.pdf'; // Optional: specify the filename
+        link.href = '/RESUME L.pdf'; // Directly specify the relative path
+        link.download = 'RESUME L.pdf'; // Optional: specify the filename
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
