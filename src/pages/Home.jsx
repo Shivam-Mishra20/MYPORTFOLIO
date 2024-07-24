@@ -1,4 +1,4 @@
-import { Blog } from "../screens/blog/Blog"
+
 import { Contact } from "../screens/Contact"
 import { Hero } from "../screens/hero/Hero"
 import { Portfolio } from "../screens/portfolio/Portfolio"
@@ -21,7 +21,7 @@ const Home = () => {
                 <Resume />
                 <Skils />
                 <Testimonial />
-                <Blog />
+
                 <Contact />
             </div>
         </>
