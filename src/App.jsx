@@ -1,6 +1,6 @@
 import { useState } from "react"
 import { useEffect } from "react"
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { HashRouter, Route, Routes } from "react-router-dom";
 import './styles/index.css'
 import Home from "./pages/Home";
 
@@ -50,7 +50,7 @@ function App() {
 
       {!showLoader && (
         <>
-          <BrowserRouter>
+          <HashRouter>
             <Routes>
               <Route
                 path="/"
@@ -72,7 +72,7 @@ function App() {
               </>} />
 
             </Routes>
-          </BrowserRouter>
+          </HashRouter>
         </>
       )}
     </>
