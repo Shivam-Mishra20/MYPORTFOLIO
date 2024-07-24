@@ -69,7 +69,7 @@ export const Header = () => {
 
 
                     <div className={`header-menu ${isMenuOpen ? "open" : ""}`}>
-                        
+
                         <nav>
                             <ul>
                                 {linklist.map((link) => (
@@ -97,9 +97,9 @@ export const Header = () => {
 
                     <div className="   flexSB">
                         <div className="header-button" onClick={sucessalert}>
-                            <NavLink to="/" className="btn tj-btn-primary">
+                            <div className="btn tj-btn-primary">
                                 Hire me!
-                            </NavLink>
+                            </div>
                         </div>
                         <div className="menu-icon" onClick={toggleMenu}>
                             {isMenuOpen ? <IoCloseOutline size={55} /> : <IoMenuOutline size={55} />}

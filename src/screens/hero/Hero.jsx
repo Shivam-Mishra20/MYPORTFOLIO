@@ -5,6 +5,7 @@ import { IoLogoGithub } from "react-icons/io";
 import { hero } from "../../assets/data";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import img from '../../../public/images/common/proimg.png'
 
 export const Hero = () => {
     const socialIcons = [
@@ -90,7 +91,7 @@ export const Hero = () => {
                         </div>
                         <div className="right w-half">
                             <div className="hero-image-box text-center">
-                                <img src="/images/common/proimg.png" alt="logo" className=" w-[290px] sm:w-[400px]   " />
+                                <img src={img} alt="logo" className=" w-[290px] sm:w-[400px]   " />
                             </div>
                         </div>
                     </div>

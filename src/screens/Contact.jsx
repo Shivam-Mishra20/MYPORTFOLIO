@@ -5,8 +5,8 @@ import { CiLocationOn } from "react-icons/ci";
 
 export const Contact = () => {
     const [contactInfo, setContactInfo] = useState({
-        phone: "+9129988822",
-        email: "shiv9129@gmail.com",
+        phone: "+ 9129988822",
+        email: "shiv912998@gmail.com",
         address: "  Laxmi Nagar,Delhi ",
     });
 
@@ -15,8 +15,8 @@ export const Contact = () => {
         const fetchContactInfo = async () => {
 
             const dummyData = {
-                phone: "+9129988822",
-                email: "shiv9129@gmail.com",
+                phone: "+ 9129988822",
+                email: "shiv912998@gmail.com",
                 address: "  Laxmi Nagar,Delhi ",
 
             };

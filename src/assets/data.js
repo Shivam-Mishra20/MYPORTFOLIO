@@ -42,12 +42,12 @@ export const service = [
     },
     {
         id: 3,
-        title: "Performance Optimization",
+        title: "Optimization",
         text: "Speed and Efficiency: Implementing best practices for performance optimization, including lazy loading, code splitting, and image compression to ensure fast loading times.",
     },
     {
         id: 4,
-        title: "Quality Assurance",
+        title: "Quality",
         text: "Debugging and Maintenance: Providing ongoing support and maintenance to quickly address any issues and ensure the longevity of web solutions.",
     },
 ];
