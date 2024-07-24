@@ -53,7 +53,7 @@ function App() {
           <HashRouter>
             <Routes>
               <Route
-                path="/Myportfolio"
+                path="/"
                 element={
                   <>
                     <Layout>

@@ -90,7 +90,7 @@ export const Hero = () => {
                         </div>
                         <div className="right w-half">
                             <div className="hero-image-box text-center">
-                                <img src="../images/common/proimg.png" alt="logo" className=" w-[290px] sm:w-[400px]   " />
+                                <img src="/images/common/proimg.png" alt="logo" className=" w-[290px] sm:w-[400px]   " />
                             </div>
                         </div>
                     </div>
