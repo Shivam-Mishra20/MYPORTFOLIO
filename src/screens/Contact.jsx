@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { IoCallOutline } from "react-icons/io5";
 import { TfiEmail } from "react-icons/tfi";
 import { CiLocationOn } from "react-icons/ci";
+import { motion } from "framer-motion";
 
 export const Contact = () => {
     const [contactInfo, setContactInfo] = useState({
@@ -11,19 +12,13 @@ export const Contact = () => {
     });
 
     useEffect(() => {
-
         const fetchContactInfo = async () => {
-
             const dummyData = {
                 phone: "+ 9129988822",
                 email: "shiv912998@gmail.com",
                 address: "  Laxmi Nagar,Delhi ",
-
             };
-
-
             await new Promise((resolve) => setTimeout(resolve, 1000));
-
             setContactInfo(dummyData); // Replace with actual data
         };
 
@@ -33,8 +28,18 @@ export const Contact = () => {
     return (
         <>
             <section className="contact-section" id="6">
-                <div className=" flex    justify-around items-center flex-wrap gap-5  containercs    ">
-                    <div className="contact-form-box w-half">
+                <motion.div
+                    className="flex justify-around items-center flex-wrap gap-5 containercs"
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ duration: 1 }}
+                >
+                    <motion.div
+                        className="contact-form-box w-half"
+                        initial={{ x: -100, opacity: 0 }}
+                        animate={{ x: 0, opacity: 1 }}
+                        transition={{ duration: 1, delay: 0.5 }}
+                    >
                         <div className="section-header">
                             <h2 className="section-title">Let’s work together!</h2>
                             <p>I design and code beautifully simple things and I love what I do. Just simple like that!</p>
@@ -79,10 +84,15 @@ export const Contact = () => {
                                 </div>
                             </form>
                         </div>
-                    </div>
+                    </motion.div>
 
-                    <div className=" w-[200px]  sm:w-[350px]  contact-info-list  ">
-                        <ul className="  ul-reset">
+                    <motion.div
+                        className="w-[200px] sm:w-[350px] contact-info-list"
+                        initial={{ x: 100, opacity: 0 }}
+                        animate={{ x: 0, opacity: 1 }}
+                        transition={{ duration: 1, delay: 1 }}
+                    >
+                        <ul className="ul-reset">
                             <li>
                                 <div className="icon-box">
                                     <IoCallOutline size={25} />
@@ -111,8 +121,8 @@ export const Contact = () => {
                                 </div>
                             </li>
                         </ul>
-                    </div>
-                </div>
+                    </motion.div>
+                </motion.div>
             </section>
         </>
     );

@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { projects } from "../../assets/data";
 import { GoArrowUpRight } from "react-icons/go";
+import { motion } from "framer-motion";
 
 export const Portfolio = () => {
     const [filter, setFilter] = useState('All');
@@ -29,22 +30,26 @@ export const Portfolio = () => {
                     <div className="portfolio-box relative">
                         <div className="grid2">
                             {filteredProjects.map((project) => (
-                                <div className={`portfolio-item ${project.category.toLowerCase()}`} key={project.id}>
+                                <motion.div
+                                    className={`portfolio-item ${project.category.toLowerCase()}`}
+                                    key={project.id}
+                                    initial={{ opacity: 0, x: -100 }}
+                                    animate={{ opacity: 1, x: 0 }}
+                                    transition={{ duration: 0.5 }}
+                                >
                                     <a href={project.link}>
-                                    <div className="image-box">
-                                        <img src={project.cover} alt={project.title} />
-                                    </div>
-                                    <div className="content-box">
-                                        
+                                        <div className="image-box">
+                                            <img src={project.cover} alt={project.title} />
+                                        </div>
+                                        <div className="content-box">
                                             <h3 className="portfolio-title">{project.title}</h3>
-                                        
-                                        <p>{project.desc}</p>
-                                        <i>
-                                            <GoArrowUpRight size={50} />
-                                        </i>
+                                            <p>{project.desc}</p>
+                                            <i>
+                                                <GoArrowUpRight size={50} />
+                                            </i>
                                         </div>
                                     </a>
-                                </div>
+                                </motion.div>
                             ))}
                         </div>
                     </div>

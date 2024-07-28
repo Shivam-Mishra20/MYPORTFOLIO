@@ -74,7 +74,7 @@ export const projects = [
         title: "Task Management App",
         desc: "A task management app that enables users to create, organize, and prioritize tasks, set deadlines, and collaborate with team members.",
         cover: "../images/portfolio/p3.jpg",
-        category: "UX/UI",
+        category: "GAME APP",
         link: 'https://shivam-mishra20.github.io/ACrudApp/'
     },
     {
