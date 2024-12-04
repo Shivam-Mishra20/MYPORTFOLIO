@@ -20,6 +20,7 @@ export const Header = () => {
             } else {
                 setIsSticky(false);
             }
+
         };
 
         window.addEventListener("scroll", handleScroll);

@@ -5,7 +5,7 @@ import { Portfolio } from "../screens/portfolio/Portfolio"
 import { Resume } from "../screens/Resume"
 import { Services } from "../screens/servicess/Services"
 import { Skils } from "../screens/Skils"
-import { Testimonial } from "../screens/Testimonial"
+
 
 
 
@@ -20,7 +20,7 @@ const Home = () => {
                 <Portfolio />
                 <Resume />
                 <Skils />
-                <Testimonial />
+
 
                 <Contact />
             </div>

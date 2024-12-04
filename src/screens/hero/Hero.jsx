@@ -1,4 +1,3 @@
-
 import { FaXTwitter } from "react-icons/fa6";
 import { PiDribbbleLogoFill } from "react-icons/pi";
 import { FaLinkedinIn } from "react-icons/fa";
@@ -7,13 +6,15 @@ import { hero } from "../../assets/data";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { motion } from 'framer-motion';
+import CountUp from 'react-countup';
+import React, { Suspense } from 'react';
 
 export const Hero = () => {
     const socialIcons = [
         {
             id: 1,
             icon: <FaXTwitter size={17} />,
-            href: '/', // Directly specify the Twitter profile URL
+            href: '/',
         },
         {
             id: 2,
@@ -34,13 +35,12 @@ export const Hero = () => {
 
     const handleDownload = () => {
         const link = document.createElement('a');
-        link.href = '/resume.pdf'; // Directly specify the relative path
-        link.download = 'resume.pdf'; // Optional: specify the filename
+        link.href = '/resume.pdf';
+        link.download = 'resume.pdf';
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
 
-        // Show success toast
         setTimeout(() => {
             toast.success('CV downloaded successfully!', {
                 position: 'bottom-center',
@@ -54,10 +54,9 @@ export const Hero = () => {
         }, 1000);
     };
 
-
     const itemVariants = {
         hidden: { opacity: 0, x: -100 },
-        visible: { opacity: 1, x: 0, transition: { type: 'spring', stiffness: 50, damping: 20 } },
+        visible: { opacity: 1, x: 0, transition: { type: 'bounce', stiffness: 50, damping: 20 } },
     };
 
     const staggerContainerVariants = {
@@ -102,9 +101,9 @@ export const Hero = () => {
                                         Download CV
                                     </button>
                                     <ul className="ul-reset social-icons">
-                                        {socialIcons.map((icon, index) => (
-                                            <li key={index}>
-                                                <a href={`${icon.href}`}>{icon.icon}</a>
+                                        {socialIcons.map((icon) => (
+                                            <li key={icon.id}>
+                                                <a href={icon.href}>{icon.icon}</a>
                                             </li>
                                         ))}
                                     </ul>
@@ -113,7 +112,10 @@ export const Hero = () => {
                         </motion.div>
                         <motion.div className="right w-half" variants={itemVariants}>
                             <div className="hero-image-box text-center">
-                                <img src="images/common/proimg.png" alt="logo" className="w-[290px] sm:w-[400px]" />
+                                {/* Lazy-loaded image */}
+                                <Suspense fallback={<div>Loading Image...</div>}>
+                                    <img src="images/logo/shivam.jpg" alt="logo" className="w-[290px] sm:w-[400px]" loading="lazy" />
+                                </Suspense>
                             </div>
                         </motion.div>
                     </motion.div>
@@ -121,10 +123,10 @@ export const Hero = () => {
                     <motion.div className="funfact-area grid4" initial="hidden" animate="visible" variants={staggerContainerVariants}>
                         {hero.map((item, index) => (
                             <motion.div className="funfact-item" key={index} variants={itemVariants}>
-                                <div className="number">
-                                    <span>{item.text}</span>
+                                <div className="number text-center">
+                                    <span><CountUp start={0} duration={3.80} end={item.text} /></span>
                                 </div>
-                                <div className="text">{item.title}</div>
+                                <div className="text text-center ">{item.title}</div>
                             </motion.div>
                         ))}
                     </motion.div>

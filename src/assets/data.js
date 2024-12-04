@@ -4,9 +4,11 @@ export const linklist = [
     { id: 2, text: "Works", link: "/work" },
     { id: 3, text: "Resume", link: "/resume" },
     { id: 4, text: "Skills", link: "/skill" },
-    { id: 5, text: "Testimonials", link: "/testimonials" },
-    { id: 6, text: "Contact", link: "/contact" },
+
+    { id: 5, text: "Contact", link: "/contact" },
 ];
+
+
 export const hero = [
     {
         id: 1,
@@ -16,7 +18,7 @@ export const hero = [
     {
         id: 2,
         title: "Project Completed",
-        text: "20+",
+        text: "20",
     },
     {
         id: 3,
@@ -55,14 +57,32 @@ export const service = [
 export const projects = [
     {
         id: 1,
+        title: "TubeMedia",
+        desc: " TubeMedia, a YouTube clone that allows users to search, watch videos, and explore channel details. Built using ReactJS, Material UI, and RapidAPI, TubeMedia offers a fully responsive and engaging video-streaming experience across all devices.",
+        cover: "../images/portfolio/p6.jpg",
+        link: "https://tubemediacom.netlify.app/",
+        category: "UX/UI",
+    },
+
+    {
+        id: 2,
+        title: "Dashboard ",
+        desc: "fully responsive dashboard using React.js, Material-UI, and Firebase, with Auth0 for secure authentication. Key features include real-time data management and data visualization through Google Charts.",
+        cover: "../images/portfolio/p5.jpg",
+        category: "UX/UI",
+        link: "https://dashboardreport.netlify.app/"
+    },
+    {
+        id: 3,
         title: "E'mitra App",
         desc: "An  ecommerce platform that sells handmade clothing, accessories, and home goods.",
         cover: "../images/portfolio/p1.jpg",
         category: "UX/UI",
         link: "https://mitraecom.netlify.app/#"
     },
+
     {
-        id: 2,
+        id: 4,
         title: "E-commerce Website",
         desc: "A web app that like amazon and flipkart where login and sign up functionality is provided.",
         cover: "../images/portfolio/p2.jpg",
@@ -70,7 +90,7 @@ export const projects = [
         link: "https://shivam-mishra20.github.io/E-commerce-React/"
     },
     {
-        id: 3,
+        id: 5,
         title: "Task Management App",
         desc: "A task management app that enables users to create, organize, and prioritize tasks, set deadlines, and collaborate with team members.",
         cover: "../images/portfolio/p3.jpg",
@@ -78,7 +98,7 @@ export const projects = [
         link: 'https://shivam-mishra20.github.io/ACrudApp/'
     },
     {
-        id: 4,
+        id: 6,
         title: "Food Recipe App ",
         desc: "  Food Recipe App that offers a variety of dishes, desserts, and specialty and good receipes.",
         cover: "../images/portfolio/p4.jpg",
@@ -86,82 +106,68 @@ export const projects = [
         category: "Apps",
 
     },
+
     {
-        id: 5,
-        title: "Weather Forecast App",
-        desc: "A weather forecast app that provides users with real-time weather updates, forecasts, and weather alerts for their location.",
-        cover: "../images/portfolio/p5.jpg",
-        link: "https://shivam-mishra20.github.io/Weather-App--React/",
-        category: "Apps",
-    },
-    {
-        id: 6,
+        id: 7,
         title: "Dice game app",
         desc: "Dice game app that allows users to play a simple dice game, roll the dice, and keep track",
-        cover: "../images/portfolio/p6.jpg",
+        cover: "../images/portfolio/p1.jpg",
         link: "https://shivam-mishra20.github.io/Dice-Game/",
         category: 'GAME APP'
     },
     {
-        id: 7,
+        id: 8,
         title: "FoodyWoody ",
         desc: "Foodwoody is a food  app that  simple ui for food resutants like  swoggy's, Burger King, Pizza Hut etc.",
         cover: "../images/portfolio/p3.jpg",
         link: "https://foodwoody.netlify.app/",
         category: 'Branding',
     },
-    {
-        id: 8,
-        title: "Intern Project",
-        desc: "this is my intern project using bootstrap and react.",
-        cover: "../images/portfolio/p1.jpg",
-        link: "https://internshiptaskproject.netlify.app/",
-        category: "UX/UI",
-    },
+
 
 ];
 
 export const experienceData = [
     {
         id: 1,
-        time: "2023 - Present",
+        time: "2024 - Present",
         title: "frontend Developer",
         institute: "Freelanceing",
     },
 
     {
         id: 2,
-        time: "2022 - 2023",
-        title: " Web developer (Internship ) ",
+        time: "2023 - jul 2024",
+        title: " Web developer  ",
         institute: "PTA TECH Sol.",
     },
     {
         id: 3,
         time: "2021 - 2022",
-        title: "DCAP (Learing)",
-        institute: "IICS ,Delhi",
+        title: "DCAP (Diploma In Computer Application & Programming)",
+        institute: "IICS , Nirman Vihar Delhi",
     },
 ];
 
 export const educationData = [
     {
         id: 1,
-        time: "2023 - 2024",
-        title: "Programming course",
-        institute: "IICS ,Delhi",
+        time: "2018 - 2019",
+        title: "10th pass",
+        institute: "CBSE BOARD",
     },
 
     {
         id: 2,
-        time: "2022 - 2023",
-        title: "Web design course",
-        institute: "Ducat ,Noida",
+        time: "2021 - 2022",
+        title: "12th pass",
+        institute: "CBSE BOARD ",
     },
     {
         id: 3,
-        time: "2021 - 2022",
-        title: "DCAP Course",
-        institute: " IICS INSTITUTE ,Delhi",
+        time: "2021 - 2024",
+        title: "Graduate",
+        institute: "UNIVERSITY OF DELHI",
     },
 ];
 
@@ -177,60 +183,60 @@ export const skillsData = [
     { id: 5, name: "Tailwind", percentage: 90, icon: "../images/skill/tal.svg" },
 
 
-    { id: 6, name: "Figma", percentage: 80, icon: "../images/skill/s1.svg" },
+    { id: 6, name: "Material-ui", percentage: 80, icon: "../images/skill/material.svg" },
 
 ];
-export const testimonialData = [
-    {
-        id: 1,
-        logo: "./images/testimonials/1.png",
-        userImage: "../images/testimonials/testimonial-1.png",
-        quote: "thanks for the great work you've done. I've been using your website for a while now and I am very satisfied with the results.",
-        name: "Brandon Fraser",
-        designation: "Senior Software Dev, Cosmic Sport",
-    },
-    {
-        id: 2,
-        logo: "./images/testimonials/2.png",
-        userImage: "../images/testimonials/testimonial-2.png",
-        quote: "I am so happy with Shivam Mishra's services and I've worked with him before.",
-        name: "Tim Bailey",
-        designation: "SEO Specialist, Theme Junction",
-    },
-    {
-        id: 3,
-        logo: "./images/testimonials/1.png",
-        userImage: "../images/testimonials/1.jpg",
-        quote: "Shivam Mishra is a professional Designer he really helps my business by providing value to my business.",
-        name: "Rahul Mishra",
-        designation: "Product Manager, Digital World",
-    },
-    {
-        id: 4,
-        logo: "./images/testimonials/2.png",
-        userImage: "../images/testimonials/2.jpg",
-        quote: "Shivam Mishra is a Good  developer  he   helps  lot for my mini business growth .",
-        name: "John  ",
-        designation: "Marketing Executive, Tech Solutions",
-    },
-    {
-        id: 5,
-        logo: "./images/testimonials/1.png",
-        userImage: "../images/testimonials/1.jpg",
-        quote: "In this era have many developers, but Shivam Mishra is the best developer in the industry.",
-        name: "Nick",
-        designation: "Product Manager"
-    },
-    {
-        id: 6,
-        logo: "./images/testimonials/2.png",
-        userImage: "../images/testimonials/testimonial-1.png",
-        quote: "  i found Shivam Mishra. He's easy to work with, creative, and efficient and focused and good knit skill .",
-        name: "Sarah Johnson",
-        designation: " Team Leader",
-    },
+// export const testimonialData = [
+//     {
+//         id: 1,
+//         logo: "./images/testimonials/1.png",
+//         userImage: "../images/testimonials/testimonial-1.png",
+//         quote: "thanks for the great work you've done. I've been using your website for a while now and I am very satisfied with the results.",
+//         name: "Brandon Fraser",
+//         designation: "Senior Software Dev, Cosmic Sport",
+//     },
+//     {
+//         id: 2,
+//         logo: "./images/testimonials/2.png",
+//         userImage: "../images/testimonials/testimonial-2.png",
+//         quote: "I am so happy with Shivam Mishra's services and I've worked with him before.",
+//         name: "Tim Bailey",
+//         designation: "SEO Specialist, Theme Junction",
+//     },
+//     {
+//         id: 3,
+//         logo: "./images/testimonials/1.png",
+//         userImage: "../images/testimonials/1.jpg",
+//         quote: "Shivam Mishra is a professional Designer he really helps my business by providing value to my business.",
+//         name: "Rahul Mishra",
+//         designation: "Product Manager, Digital World",
+//     },
+//     {
+//         id: 4,
+//         logo: "./images/testimonials/2.png",
+//         userImage: "../images/testimonials/2.jpg",
+//         quote: "Shivam Mishra is a Good  developer  he   helps  lot for my mini business growth .",
+//         name: "John  ",
+//         designation: "Marketing Executive, Tech Solutions",
+//     },
+//     {
+//         id: 5,
+//         logo: "./images/testimonials/1.png",
+//         userImage: "../images/testimonials/1.jpg",
+//         quote: "In this era have many developers, but Shivam Mishra is the best developer in the industry.",
+//         name: "Nick",
+//         designation: "Product Manager"
+//     },
+//     {
+//         id: 6,
+//         logo: "./images/testimonials/2.png",
+//         userImage: "../images/testimonials/testimonial-1.png",
+//         quote: "  i found Shivam Mishra. He's easy to work with, creative, and efficient and focused and good knit skill .",
+//         name: "Sarah Johnson",
+//         designation: " Team Leader",
+//     },
 
-];
+// ];
 
 export const blogs = [
     {
